@@ -4,8 +4,8 @@
 #include <time.h>
 
 char poly_molecule[20][6] = {
-    {"NH4+1"},
-    {"NH4+2"},
+    {"C2H3O2"},
+    {"NO3"},
     {"NH4+3"},
     {"NH4+4"},
     {"NH4+5"},

@@ -3,6 +3,8 @@
 #include <string.h>
 #include <time.h>
 
+
+
 char poly_molecule[20][6] = {
     {"C2H3O2"},
     {"NO3"},
@@ -49,9 +51,17 @@ char poly_name[20][2] = {
     {"20"},
 };
 
+int random_int() {
+    srand(time(NULL));
+    int random = rand() % sizeof(poly_molecule) +1;
+    printf("%d", random);
+    return random;
+}
+
+
 int main(void) {
-
-
+    int test=sizeof(poly_molecule);
+    printf("%d", test);
 
     return 0;
 }

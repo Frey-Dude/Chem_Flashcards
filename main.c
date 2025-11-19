@@ -51,6 +51,8 @@ char poly_name[20][2] = {
     {"20"},
 };
 
+int list_length = sizeof(poly_molecule) / sizeof(poly_molecule[0]);
+
 int random_int() {
     srand(time(NULL));
     int random = rand() % sizeof(poly_molecule) +1;
@@ -58,10 +60,16 @@ int random_int() {
     return random;
 }
 
+int start() {
+    for (int i = list_length; i > 0; i--) {
+
+    }
+    return 0;
+}
 
 int main(void) {
     int test=sizeof(poly_molecule);
-    printf("%d", test);
-
+    // printf("%d", list_length);
+    start();
     return 0;
 }
